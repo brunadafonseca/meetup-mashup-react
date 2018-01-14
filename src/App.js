@@ -8,8 +8,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TopicsList />
-        <RsvpList />
+        <header>
+          <h1>Meetup mashup</h1>
+        </header>
+        <main>
+          <TopicsList />
+          <RsvpList />
+        </main>
       </div>
     );
   }
