@@ -1,0 +1,11 @@
+.rsvp-item {
+  max-width: 700px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-height: 150px; }
+  .rsvp-item .picture img {
+    display: block;
+    padding: 20px; }
+  .rsvp-item .names {
+    display: inline-block; }

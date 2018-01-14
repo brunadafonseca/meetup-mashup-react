@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import './RsvpItem.css'
 
 export const rsvpShape = PropTypes.shape({
     eventName: PropTypes.string.isRequired,
@@ -13,13 +14,15 @@ class RsvpItem extends PureComponent {
   }
 
   render() {
-    const { eventName, memberName, photo } = this.props
-
     return (
-      <div>
-        <h3>{ eventName }</h3>
-        <p>{ memberName } is joining this event!</p>
-        <img src={ photo } alt="member"/>
+      <div class='rsvp-item'>
+        <div class='picture'>
+          <img src={ this.props.photo } alt="member"/>
+        </div>
+        <div class='names'>
+          <h3>{ this.props.eventName }</h3>
+          <p>{ this.props.memberName } is joining this event!</p>
+        </div>
       </div>
     )
   }
