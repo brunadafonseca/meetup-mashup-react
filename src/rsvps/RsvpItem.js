@@ -17,7 +17,7 @@ class RsvpItem extends PureComponent {
     return (
       <div class='rsvp-item'>
         <div class='picture'>
-          <img src={ this.props.photo } alt="member"/>
+          {this.props.photo && <img src={ this.props.photo} alt="member"/> }
         </div>
         <div class='names'>
           <h3>{ this.props.eventName }</h3>
